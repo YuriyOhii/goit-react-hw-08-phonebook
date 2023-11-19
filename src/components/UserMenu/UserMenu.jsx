@@ -13,7 +13,7 @@ export const UserMenu = () => {
       <p>
         Hello! <FaUser /> {email}
       </p>
-      <Button onClick={() => dispatch(logoutUser())} type="button">
+      <Button onClick={() => dispatch(logoutUser())}>
         LogOut
       </Button>
     </Wrap>

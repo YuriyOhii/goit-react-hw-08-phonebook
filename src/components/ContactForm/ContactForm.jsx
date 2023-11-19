@@ -1,10 +1,11 @@
 import * as Yup from 'yup';
 import { nanoid } from 'nanoid';
 import { Formik } from 'formik';
-import { NewContact, Input, ErrCaption, Button } from './Contactform.styled';
+import { NewContact, Input, ErrCaption } from './Contactform.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts } from 'redux/contacts/selectors';
 import { addContact } from '../../redux/contacts/operations';
+import { Button } from 'components/Button/Button';
 
 const uniqueId = {
   name: nanoid(),
